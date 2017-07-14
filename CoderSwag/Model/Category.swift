@@ -8,7 +8,15 @@
 
 import Foundation
 
-class Category {
+public class Category {
     
+    private(set) public var Title: ProductType
+    
+    private(set) public var ImageName: String
+    
+    init(Title:ProductType, ImageName: String) {
+        self.Title = Title
+        self.ImageName = ImageName
+    }
     
 }
