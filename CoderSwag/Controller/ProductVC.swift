@@ -12,23 +12,21 @@ class ProductVC: UIViewController {
     
     private (set) public var Products: [Product] = [Product]()
     
+    //MARK: IBOutlets
     @IBOutlet weak var cvProducts: UICollectionView!
     
+    //MARK: View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        
         cvProducts.dataSource = self
         cvProducts.delegate = self
-        
         cvProducts.reloadData()
         
     }
 
+    //MARK: User Functions
     func InitializeProducts(forCategory category: Category) {
         Products = DataService.instance.GetProductsByProductType(forProductType: category.Title )
-        
         navigationItem.title = String(describing: category.Title)
     }
 

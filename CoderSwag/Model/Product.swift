@@ -9,6 +9,7 @@
 import Foundation
 
 struct Product {
+    
     private(set) public var ImageName: String
     private(set) public var Description: String
     private(set) public var Price: String

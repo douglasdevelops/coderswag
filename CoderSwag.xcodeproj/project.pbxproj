@@ -20,6 +20,7 @@
 		225E8C2E1F17F30600F6733D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225E8C2D1F17F30600F6733D /* Product.swift */; };
 		225E8C301F17FBA000F6733D /* ProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225E8C2F1F17FBA000F6733D /* ProductVC.swift */; };
 		225E8C331F17FBBA00F6733D /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225E8C321F17FBBA00F6733D /* CollectionView.swift */; };
+		229BE0921F51135F0046274C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229BE0911F51135F0046274C /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		225E8C2D1F17F30600F6733D /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		225E8C2F1F17FBA000F6733D /* ProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductVC.swift; sourceTree = "<group>"; };
 		225E8C321F17FBBA00F6733D /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		229BE0911F51135F0046274C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				225E8C111F17D37500F6733D /* Assets.xcassets */,
 				225E8C131F17D37500F6733D /* LaunchScreen.storyboard */,
 				225E8C161F17D37500F6733D /* Info.plist */,
+				229BE0911F51135F0046274C /* Constants.swift */,
 			);
 			path = CoderSwag;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				225E8C0D1F17D37500F6733D /* CategoriesVC.swift in Sources */,
+				229BE0921F51135F0046274C /* Constants.swift in Sources */,
 				225E8C2E1F17F30600F6733D /* Product.swift in Sources */,
 				225E8C2A1F17E6DF00F6733D /* TableView.swift in Sources */,
 				225E8C201F17D9F900F6733D /* CategoryCell.swift in Sources */,
@@ -400,6 +404,7 @@
 				225E8C1B1F17D37500F6733D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

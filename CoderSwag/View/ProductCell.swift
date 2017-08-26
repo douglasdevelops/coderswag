@@ -10,13 +10,16 @@ import UIKit
 
 class ProductCell: UICollectionViewCell {
     
+    //MARK: IBOutlets
     @IBOutlet weak var lblPrice: UILabel!
     @IBOutlet weak var lblDescription: UILabel!
     @IBOutlet weak var imgProductImage: UIImageView!
     
+    //MARK:  User Functions
     func ConfigureCell(forProduct givenProduct: Product) {
         lblPrice.text = givenProduct.Price
         lblDescription.text = givenProduct.Description
         imgProductImage.image = UIImage(named: givenProduct.ImageName)
+        self.reuseIdentifier = 
     }
 }

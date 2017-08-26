@@ -9,18 +9,19 @@
 import UIKit
 
 class CategoriesVC: UIViewController {
-    
+    //MARK: - IBOutlets
     @IBOutlet weak var tvCategoriesTableView: UITableView!
     
+    //MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
         tvCategoriesTableView.delegate = self
         tvCategoriesTableView.dataSource = self
         tvCategoriesTableView.reloadData()
     }
     
+    //MARK: - User Functions
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let ProductsVC = segue.destination as? ProductVC {
             assert(sender as? Category != nil)
@@ -31,6 +32,5 @@ class CategoriesVC: UIViewController {
             navigationItem.backBarButtonItem = barBtn
         }
     }
-
 }
 
