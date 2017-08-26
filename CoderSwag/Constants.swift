@@ -8,7 +8,10 @@
 
 import Foundation
 
-CategoryCell
-ProductVC
-ProductCell
+//Tableview Cell Definitions
+let CELL_CATEGORY = "CategoryCell"
+let CELL_PRODUCT = "ProductCell"
+
+//Segue Definitions
+let SEGUE_PRODUCT_VC = "ProductVC"
 

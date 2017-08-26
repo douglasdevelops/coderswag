@@ -21,7 +21,6 @@ class ProductVC: UIViewController {
         cvProducts.dataSource = self
         cvProducts.delegate = self
         cvProducts.reloadData()
-        
     }
 
     //MARK: User Functions
@@ -29,5 +28,4 @@ class ProductVC: UIViewController {
         Products = DataService.instance.GetProductsByProductType(forProductType: category.Title )
         navigationItem.title = String(describing: category.Title)
     }
-
 }

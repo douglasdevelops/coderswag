@@ -15,12 +15,10 @@ extension ProductVC: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCell", for: indexPath) as? ProductCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SEGUE_PRODUCT_VC, for: indexPath) as? ProductCell {
             cell.ConfigureCell(forProduct: Products[indexPath.row])
             return cell
         }
-        
         return ProductCell()
     }
 }

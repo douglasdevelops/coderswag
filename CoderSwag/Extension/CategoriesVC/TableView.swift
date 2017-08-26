@@ -14,7 +14,7 @@ extension CategoriesVC: UITableViewDelegate, UITableViewDataSource {
         return DataService.instance.GetCategories().count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tvCategoriesTableView.dequeueReusableCell(withIdentifier: "CategoryCell") as? CategoryCell {
+        if let cell = tvCategoriesTableView.dequeueReusableCell(withIdentifier: CELL_CATEGORY) as? CategoryCell {
             cell.ConfigureCell(forCategory: DataService.instance.GetCategories()[indexPath.row])
             return cell
         }
@@ -22,6 +22,6 @@ extension CategoriesVC: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let Category = DataService.instance.GetCategories()[indexPath.row]
-        performSegue(withIdentifier: "ProductVC", sender: Category)
+        performSegue(withIdentifier: SEGUE_PRODUCT_VC, sender: Category)
     }
 }
