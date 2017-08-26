@@ -20,6 +20,5 @@ class ProductCell: UICollectionViewCell {
         lblPrice.text = givenProduct.Price
         lblDescription.text = givenProduct.Description
         imgProductImage.image = UIImage(named: givenProduct.ImageName)
-        self.reuseIdentifier = 
     }
 }
